@@ -22,6 +22,10 @@ int main(int argc, char** argv)
 	{
 		die(HELP_INFO);
 	}
-
+	/* url is supplied */
+	else
+	{
+		check_url(argv[1]);
+	}
 	return 0;
 }

@@ -1,5 +1,5 @@
 CC=/usr/bin/cc
-CFLAGS= -std=c89 -Wall -Wextra
+CFLAGS=-std=c89 -Wall -Wextra
 
 all: based-browser
 
