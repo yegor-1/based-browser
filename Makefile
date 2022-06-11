@@ -3,11 +3,8 @@ CFLAGS= -std=c89 -Wall -Wextra
 
 all: based-browser
 
-%.o: %.c %.h
-	$(CC) $(CFLAGS) -c $^
-
-based-browser: main.c
+based-browser: util.c util.h main.c
 	$(CC) $(CFLAGS) -o $@ $^
 
 clean:
-	rm *.o based-browser
+	rm based-browser
