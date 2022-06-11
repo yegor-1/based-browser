@@ -25,7 +25,10 @@ int main(int argc, char** argv)
 	/* url is supplied */
 	else
 	{
-		check_url(argv[1]);
+		if (!validate_url(argv[1]))
+		{
+			die("Supplied URL invalid.");
+		}
 	}
 	return 0;
 }

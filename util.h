@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <regex.h>
 
 void die(const char* message);
-int check_url(char* url);
+int validate_url(const char* url);

@@ -5,8 +5,8 @@ void die(const char* message)
 	printf("%s\n", message);
 	exit(1);
 }
-int check_url(char* url)
+
+int validate_url(const char* url)
 {
-	regex_t regex;
 
 }
